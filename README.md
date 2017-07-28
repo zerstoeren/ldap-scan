@@ -10,13 +10,13 @@ Lesson Learned
 Example:
 
 ```bash
-root@docker# ./ldapscanner.py -ip 192.168.10.5
+root@docker# ./ldapscanner.py -ip 192.168.10.5 -port 389 -proto ldap
 attempting to scan 192.168.10.5
 root@docker#
 ```
 
 ```
-root@docker# ./ldapscanner.py -ip 192.168.10.5
+root@docker# ./ldapscanner.py -ip 192.168.10.5 -port 636 -proto ldaps
 attempting to scan 192.168.10.5
 ```
 
@@ -42,9 +42,9 @@ Example
 ===
 
 ```bash
-./ldapscanner.py -ip 192.168.10.5 -port 1104
+./ldapscanner.py -ip 192.168.10.5 -port 389 -proto ldap
 
-./ldapscanner.py -netrange 192.168.10.0/24 -port 1104 -results_file results.txt
+./ldapscanner.py -netrange 192.168.10.0/24 -port 636 -proto ldaps
 ```
 
 Bugs
